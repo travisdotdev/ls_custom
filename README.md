@@ -39,5 +39,5 @@ drwxr-xr-x 2 user group  4096 Jul  7 14:32 src
 
 This is a project for learning and not a drop-in `ls` replacement.
 
-- No column padding/alignment — output is space-separated and ragged
+- No column padding/alignment output is space separated
 - No sorting entries appear in filesystem order (real `ls` sorts alphabetically)
