@@ -20,7 +20,7 @@ gcc -Wall -Wextra -o ls_custom ls_custom.c
 ## Usage
 
 ```sh
-./ls_custom # list current directory
+./ls_custom              # list current directory
 ./ls_custom -a           # include hidden files
 ./ls_custom -l /tmp      # long format for /tmp
 ./ls_custom -la          # hidden files, long format
