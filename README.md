@@ -14,7 +14,7 @@ filesystem syscall layer `opendir`/`readdir` for directory iteration and
 ## Build
 
 ```sh
-gcc -Wall -Wextra -o ls_custom ls_custom.c
+gcc -Wall -Wextra -o ls_custom ls.c
 ```
 
 ## Usage
