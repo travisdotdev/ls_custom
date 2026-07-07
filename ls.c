@@ -39,7 +39,7 @@ void print_long(const char *dir, const char *name) {
 	mode_string(st.st_mode, modes);
 
 	struct passwd *pw = getpwuid(st.st_uid);
-	struct group *gr = getgrgid(st.st_uid);
+	struct group *gr = getgrgid(st.st_gid);
 	const char *user = pw ? pw->pw_name : "?";
 	const char *group = gr ? gr->gr_name : "?";
 	printf("%s %s %s %s\n", modes, user, group, name);
@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
 		}
 	}
 
-	const char *path = (optind > argc) ? argv[optind] : ".";
+	const char *path = (optind < argc) ? argv[optind] : ".";
 
 	DIR *dir = opendir(path);
 	if (!dir) {
