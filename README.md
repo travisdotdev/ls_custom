@@ -1,4 +1,4 @@
-#ls_custom 
+# ls_custom 
 
 A partial reimplementation of the Unix `ls` command in C, written to learn the
 filesystem syscall layer `opendir`/`readdir` for directory iteration and
